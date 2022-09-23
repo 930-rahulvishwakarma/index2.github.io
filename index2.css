@@ -9,6 +9,7 @@
 }
 body {
   box-sizing: border-box;
+  background-color: #ffffff;
   /* color: rgb(195, 190, 190); */
 }
 html {
@@ -16,7 +17,7 @@ html {
   width: 100vw;
   font-size: 62.5%;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 .outercantainer {
@@ -24,6 +25,7 @@ html {
   width: 100vw;
   height:100vh;
   margin: 0 auto;
+  z-index: 1;
   /* border: 2px solid red; */
 }
 .frist {
@@ -266,7 +268,7 @@ span i {
  font-weight: 700;
  margin-top: 3rem;
 }
-#one{
+.one{
     width: 14rem;
     height: 10rem;
     border: 1px solid orange;
@@ -276,13 +278,13 @@ span i {
     background-size: 4rem;
   box-shadow: 0px 0px 4px orangered;
   }
-#one p{
+.one p{
   color: rgb(224, 147, 5);
   text-align: center;
     padding-top: 6rem;
     padding-right: 2rem;
 }
-#two{
+.two{
     width: 14rem;
     height: 10rem;
     border: 1px solid orange;
@@ -292,14 +294,14 @@ span i {
     background-size: 4rem;
   box-shadow: 0px 0px 4px orangered;
 }
-#two p{
+.two p{
   color: rgb(224, 147, 5);
    text-align: center;
     padding-top: 6rem;
     padding-right: .6rem;
 }
 
-#three{
+.three{
     width: 14rem;
     height: 10rem;
     border: 1px solid orange;
@@ -309,14 +311,14 @@ span i {
     background-size: 4rem;
   box-shadow: 0px 0px 4px orangered;
 }
-  #three p{
+  .three p{
     color: rgb(224, 147, 5);
     text-align: center;
     padding-top: 6rem;
   padding-right: .6rem;
 }
 
-#four{
+.four{
     width: 14rem;
     height: 10rem;
     border: 1px solid skyblue;
@@ -326,14 +328,14 @@ span i {
     background-size: 4rem;
     box-shadow: 0px 0px 4px slategrey;
   }
-#four p{
+.four p{
   color: skyblue;
   text-align: center;
     padding-top: 6rem;
     padding-right: 1.8rem;
 }
 
-#five{
+.five{
     width: 14rem;
     height: 10rem;
     border: 1px solid skyblue;
@@ -343,14 +345,14 @@ span i {
   box-shadow: 0px 0px 4px slategrey;
   background-size: 4rem;
 }
-#five p{
+.five p{
   color: skyblue;
     text-align: center;
     padding-top: 6rem;
     padding-right: .6rem;
 }
 
-#six{
+.six{
     width: 14rem;
     height: 10rem;
     border: 1px solid skyblue;
@@ -360,7 +362,7 @@ span i {
     background-size: 4rem;
     box-shadow: 0px 0px 4px slategrey;
   }
-#six p{
+.six p{
   color: skyblue;
     text-align: center;
     padding-top: 6rem;
@@ -369,115 +371,115 @@ span i {
 
 /* media */
 @media (max-width:41.4rem){
-  #one{
+  .one{
     width: 12rem;
     height: 10rem;
     background-size: 5rem;
     background-position: top 1.5rem left 3rem;
 }
-#one p{
+.one p{
   padding-top: 7rem;
 }
-#two{
+.two{
      width: 12rem;
     height: 10rem;
     background-position:top 1.5rem left 3rem;
    background-size: 5rem;
   }
-#two p{
+.two p{
   padding-top:7.5rem;
 }
-#three{
+.three{
     width: 12rem;
     height: 10rem;
     background-size: 5rem;
     /* margin-right: 1rem; */
     background-position:top .4rem ;
   }
-  #three p{
+  .three p{
     padding-top: 6rem;
 }
-#four{
+.four{
     width: 12rem;
     height: 10rem;
     background-size: 5rem;
     margin-top: 3rem;
   }
-  #four p{
+  .four p{
     padding-top: 7rem;
     padding-left: 1rem;
   }
-#five{
+.five{
   margin-top: 3rem;
     width: 12rem;
     height: 10rem;
     background-size: 5rem;
 }
 
-#five p{
+.five p{
   padding-top: 7rem;
 }
-#six{
+.six{
     margin-top: 3rem;
     width: 12rem;
     height: 10rem;
     background-position: top 1rem left 4rem;
     background-size: 4rem;
 }
-#six p{
+.six p{
     padding-top: 7rem;
     /* padding-left: .2rem; */
   } 
 }
 @media (max-width:360rem){
-  #one{
+  .one{
     margin: 0 1rem;
     width: 10rem;
     height: 9rem;
     background-size: 4.5rem;
     background-position: top 1rem left 3rem;
 }
-#one p{
+.one p{
   padding-top: 6.5rem;
   padding-left: 1.8rem;
   font-size: 1.2rem;
 }
-#two{
+.two{
   margin: 0 1rem;
      width: 10rem;
     height: 9rem;
     background-position:top 1rem left 3rem;
    background-size: 4.5rem;
   }
-#two p{
+.two p{
   padding-top: 6.5rem;
   font-size: 1.2rem;
 }
-#three{
+.three{
   margin: 0 1rem;
     width: 10rem;
     height: 9rem;
     background-size: 4.5rem;
     background-position:top .7rem left 2.7rem;
   }
-  #three p{
+  .three p{
     padding-top: 5.5rem;
   padding-left: .5rem;
     font-size: 1.2rem;
 }
-#four{
+.four{
     width: 10rem;
     height: 9rem;
     background-size: 4.5rem;
     background-position:top .7rem left 2.7rem;
     margin-top: 3rem;
   }
-  #four p{
+  .four p{
     padding-top: 6.5rem;
     padding-left: 1rem;
     font-size: 1.2rem;
   }
-#five{
+.five{
   margin-top: 3rem;
     width: 10rem;
     height: 9rem;
@@ -485,20 +487,143 @@ span i {
     background-position: top .7rem left 2.7rem;
 }
 
-#five p{
+.five p{
   font-size: 1.2rem;
   padding-top: 6.5rem;
 }
-#six{
+.six{
     margin-top: 3rem;
     width: 10rem;
     height: 9rem;
     background-position: top 1rem left 2.7rem;
     background-size: 4.5rem;
 }
-#six p{
+.six p{
     padding-top: 6.5rem;
     font-size: 1.2rem;
     /* padding-left: .2rem; */
   } 
+}
+/* inear info  */
+.modal-content {
+  width: 100vw;
+  height: 100vh;
+ background-color: rgba(218, 218, 218, 0.923);
+}
+.modal {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+/* width: 100%; */
+/* height: 100%; */
+overflow: hidden;
+}
+
+.frist{
+  border: 2px solid white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: azure;
+  place-items: center;
+}
+.frist h2{
+  /* padding: 1rem; */
+  font-size: 3rem;
+  padding-left: 2rem;
+  justify-self: baseline;
+  cursor: pointer;
+}
+.frist h1{
+  font-size: 2rem;
+  justify-self: baseline;
+}
+.second{
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+#one{
+  margin: .3rem 0rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.781);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 0  5px black;
+}
+
+#one p{
+   /* padding: 1rem; */
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#two{
+  margin: .3rem 0rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 0 5px black;
+
+}
+
+#two p{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#third{
+  box-shadow: 0 0 5px black;
+  margin: .3rem 0rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+}
+#third p{
+  font-size: 2rem;
+  font-weight: 800;
+}
+input[type="password"]{
+  /* box-shadow: 0 0 5px black; */
+  margin: .3rem 0rem;
+  width: 6rem;
+  border-style: none;
+  font-size: 2rem;
+}  
+
+#four{
+  box-shadow: 0 0 5px black;
+
+  margin: .3rem 0rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#four p{
+  font-size: 2rem;
+  font-weight: 800;
+}
+#five{
+  margin: .3rem 0rem;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 0 5px black;
+}
+#five p{
+  font-size: 2rem;
+  font-weight: 800;
+  /* color: lightslategray; */
+}
+
+.phone{
+  color: rgb(3, 3, 102);
+}
+#phone{
+  color:lightslategray;
 }
