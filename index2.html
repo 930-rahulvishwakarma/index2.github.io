@@ -6,26 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index2.css">
-    <script src="https://kit.fontawesome.com/a7dfd295f2.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
     <title>index2</title>
+
+    <script defer src="ondex2.js"></script>
+    <script defer src="trade.js"></script>
 </head>
 
 <body>
     <div class="outercantainer">
-        <div class="frist">
-            <a href="http://" target="_blank" rel="noopener noreferrer" class="frist-anchor">
-                <h1>
-                    < </h1>
-            </a>
-            <h1>my page</h1>
-            <a href="" id="frist">
-                <h4>privilege</h4>
-            </a>
+        <div id="frist">
+            <nav id="fristarrow"> <
+                </nav>
+                    <nav id="mypage">my page</nav>
+                    <nav id="priv">privelges</nav>
         </div>
+
         <div id="secondcantainer">
             <div class="secondcantainer">
                 <div id="sOne">
@@ -57,14 +52,80 @@
             </span>
         </div>
         <div class="footer">
-            <div id="one"><p>INFO</p></div>
-            <div id="two"><p>TRADELIST</p></div>
-            <div id="three"><p>ACCOUNT<br>MANAGEMENT</p></div>
-            <div id="four"><p>CS</p></div> 
-            <div id="five"><p>SETTING</p></div>
-            <div id="six"><p>APPDOWNLOAD</p></div>
-            <div id="seven">GOOLOBAL<br>FOOTBALL</div>     
+            <div class="one" id="myBtn">
+                <p>INFO</p>
+            </div>
+            <div class="two" id="mybtn">
+                <p>TRADELIST</p>
+            </div>
+            <div class=" three">
+                <p>ACCOUNT<br>MANAGEMENT</p>
+            </div>
+            <div class="four">
+                <p>CS</p>
+            </div>
+            <div class="five">
+                <p>SETTING</p>
+            </div>
+            <div class="six">
+                <p>APPDOWNLOAD</p>
+            </div>
+            <div class="seven">GOOLOBAL<br>FOOTBALL</div>
         </div>
+        <!-- <button id="myBtn">click me</button> -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <!-- <p>close</p> -->
+                <div class="outer">
+                    <div class="frist">
+                        <h2 class="close">
+                            < </h2>
+                                <h1>Info</h1>
+                    </div>
+                    <!-- name -->
+                    <div class="second">
+                        <div id="one">
+                            <p>Real Name</p>
+                            <p>Golu</p>
+                        </div>
+                        <div id="two">
+                            <p>Nickname</p>
+                            <p>Golu ></p>
+                        </div>
+                        <div id="third">
+                            <p>Login Password</p>
+                            <p><input type="password" value="1257845"> > </p>
+                        </div>
+                        <div id="four">
+                            <p class="withdrwal">Withdrawal Code</p>
+                            <p><input type="password" value="1258575"> > </p>
+                        </div>
+                        <div id="five">
+                            <p class="phone">Phone Number</p>
+                            <p id="phone">9304411522</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- tradeinear-->
+    <div id="Modaltrade" class="myModal">
+        <div class="modelContent">
+            <div class="tradeinear">
+                <h2 id="closetwo">
+                    < </h2>
+                        <p id="tradetwo">Trade List</p>
+                        <p id="tradethree">Instructions</p>
+            </div>
+            <div class="tradeinear2">
+               <p>deposit</p>
+               <p>Withdrawal</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
