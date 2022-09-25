@@ -17,7 +17,7 @@ html {
   width: 100vw;
   font-size: 62.5%;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 .outercantainer {
@@ -247,20 +247,20 @@ span i {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 10rem) 10rem;
   place-items: center;
-  /* outline: .2rem solid yellow; */
- /* background-color: blue; */
- /* color: antiquewhite; */
  font-size: 1.5rem;
  font-weight: 700;
- margin-top: 3rem;
+ margin-top: 2rem;
+ grid-row-gap: 2rem;
+ /* padding-bottom: 2rem; */
 }
 .one{
-    width: 14rem;
+  align-self: center;
+    width: 10rem;
     height: 10rem;
     border: 1px solid orange;
     background-image: url(info.png);
     background-repeat: no-repeat;
-    background-position: top 1rem left 4rem;
+    background-position: top 1rem left 3rem;
     background-size: 4rem;
   box-shadow: 0px 0px 4px orangered;
   }
@@ -268,94 +268,164 @@ span i {
   color: rgb(224, 147, 5);
   text-align: center;
     padding-top: 6rem;
-    padding-right: 2rem;
+    padding-right: .5rem;
 }
 .two{
-    width: 14rem;
-    height: 10rem;
-    border: 1px solid orange;
-    background-image: url(tradelist.png);
-    background-repeat: no-repeat;
-    background-position: top 1rem left 4rem;
-    background-size: 4rem;
-  box-shadow: 0px 0px 4px orangered;
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid orange;
+  background-image: url(tradelist.png);
+  background-repeat: no-repeat;
+  background-position: top 1rem left 3rem;
+  background-size: 4rem;
+box-shadow: 0px 0px 4px orangered;
 }
 .two p{
-  color: rgb(224, 147, 5);
-   text-align: center;
-    padding-top: 6rem;
-    padding-right: .6rem;
-}
-
-.three{
-    width: 14rem;
-    height: 10rem;
-    border: 1px solid orange;
-    background-image: url(account.png);
-    background-repeat: no-repeat;
-    background-position: top 1rem left 4rem;
-    background-size: 4rem;
-  box-shadow: 0px 0px 4px orangered;
-}
-  .three p{
-    color: rgb(224, 147, 5);
-    text-align: center;
-    padding-top: 6rem;
-  padding-right: .6rem;
-}
-
-.four{
-    width: 14rem;
-    height: 10rem;
-    border: 1px solid skyblue;
-    background-image: url(customer-service.png);
-    background-repeat: no-repeat;
-    background-position: top 1rem left 4rem;
-    background-size: 4rem;
-    box-shadow: 0px 0px 4px slategrey;
-  }
-.four p{
-  color: skyblue;
-  text-align: center;
-    padding-top: 6rem;
-    padding-right: 1.8rem;
-}
-
-.five{
-    width: 14rem;
-    height: 10rem;
-    border: 1px solid skyblue;
-    background-image: url(settings.png);
-    background-repeat: no-repeat;
-    background-position: top 1rem left 4rem;
-  box-shadow: 0px 0px 4px slategrey;
+color: rgb(224, 147, 5);
+text-align: center;
+  padding-top: 6rem;
+  padding-right: .5rem;
+}.three{
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid orange;
+  background-image: url(account.png);
+  background-repeat: no-repeat;
+  background-position: top 1rem left 3rem;
   background-size: 4rem;
+box-shadow: 0px 0px 4px orangered;
+}
+.three p{
+color: rgb(224, 147, 5);
+text-align: center;
+  padding-top: 6rem;
+  padding-right: .5rem;
+}.four{
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid lightseagreen;
+  background-image: url(customer-service.png);
+  background-repeat: no-repeat;
+  background-position: top 1rem left 3rem;
+  background-size: 4rem;
+box-shadow: 0px 0px 4px skyblue;
+}
+.four p{
+  color: lightseagreen;
+text-align: center;
+  padding-top: 6rem;
+  padding-right: .5rem;
+}
+.five{
+  border: 1px solid lightseagreen;
+  width: 10rem;
+  height: 10rem;
+  background-image: url(settings.png);
+  background-repeat: no-repeat;
+  background-position: top 1rem left 3rem;
+  background-size: 4rem;
+box-shadow: 0px 0px 4px skyblue;
 }
 .five p{
-  color: skyblue;
-    text-align: center;
-    padding-top: 6rem;
-    padding-right: .6rem;
+  color: lightseagreen;
+  text-align: center;
+  padding-top: 6rem;
+  padding-right: .5rem;
+}.six{
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid lightseagreen;
+  background-image: url(download.png);
+  background-repeat: no-repeat;
+  background-position: top 1rem left 3rem;
+  background-size: 4rem;
+box-shadow: 0px 0px 4px skyblue;
 }
-
-.six{
-    width: 14rem;
-    height: 10rem;
-    border: 1px solid skyblue;
-    background-image: url(download.png);
-    background-repeat: no-repeat;
-    background-position: top 1rem left 4rem;
-    background-size: 4rem;
-    box-shadow: 0px 0px 4px slategrey;
-  }
 .six p{
-  color: skyblue;
-    text-align: center;
-    padding-top: 6rem;
-    padding-right: .6rem;
+  color: lightseagreen;
+text-align: center;
+  padding-top: 6rem;
+  padding-right: .5rem;
 }
 
 /* media */
+@media (max-width:28rem){
+  .one{
+    width: 6rem;
+    height: 6rem;
+    background-size: 3rem;
+    background-position: top .5rem left 1.5rem;
+}
+.one p{
+  padding-top: 4rem;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+.two{
+     width: 6rem;
+    height: 6rem;
+    background-position:top .5rem left 1.5rem;
+   background-size: 3.5rem;
+  }
+.two p{
+  padding-top: 4.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+   padding-left: .5rem;
+}
+.three{
+    width: 6rem;
+    height: 6rem;
+    background-size: 3rem;
+    background-position:top .4rem left 1rem;
+  }
+  .three p{
+    padding-top: 4rem;
+    font-size: .8rem;
+    font-weight: 700;
+  }
+.four{
+  margin-bottom: 5rem;
+  width: 6rem;
+    height: 6rem;
+    background-size: 3rem;
+    background-position:top .5rem left 1rem;
+  }
+  .four p{
+    padding-top: 4rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+.five{
+  margin-bottom: 5rem;
+
+    width: 6rem;
+    height:6rem;
+    background-size: 3rem;
+    background-position: top .5rem left 1rem;
+}
+
+.five p{
+  font-size: 1.2rem;
+  padding-top: 4rem;
+  font-weight: 900;
+}
+.six{
+    margin-bottom: 5rem;
+    width: 6rem;
+    height: 6rem;
+    background-position: top .5rem left 1rem;
+    background-size: 3rem;
+}
+.six p{
+    padding-top: 4rem;
+    font-size: .7rem;
+    font-weight: 900;
+  } 
+} 
+
 @media (max-width:41.4rem){
   .one{
     width: 12rem;
@@ -379,7 +449,6 @@ span i {
     width: 12rem;
     height: 10rem;
     background-size: 5rem;
-    /* margin-right: 1rem; */
     background-position:top .4rem ;
   }
   .three p{
@@ -417,7 +486,7 @@ span i {
     /* padding-left: .2rem; */
   } 
 }
-@media (max-width:360rem){
+@media (max-width:36rem){
   .one{
     margin: 0 1rem;
     width: 10rem;
@@ -490,75 +559,7 @@ span i {
     /* padding-left: .2rem; */
   } 
 }
-@media (max-width:28rem){
-  .one{
-    width: 8rem;
-    height: 8rem;
-    background-size: 4rem;
-    background-position: top 1rem left 2rem;
-}
-.one p{
-  padding-top: 6rem;
-  padding-left: 1.5rem;
-  font-size: 1.2rem;
-}
-.two{
-     width: 8rem;
-    height: 8rem;
-    background-position:top 1rem left 2rem;
-   background-size: 4rem;
-  }
-.two p{
-  padding-top: 6rem;
-  font-size: 1.2rem;
-  padding-left: .5rem;
-}
-.three{
-    width: 8rem;
-    height: 8rem;
-    background-size: 4rem;
-    background-position:top .7rem left 2rem;
-  }
-  .three p{
-    padding-top: 5rem;
-    font-size: 1rem;
-    /* padding-right: rem; */
-}
-.four{
-    width: 8rem;
-    height: 8rem;
-    background-size: 4rem;
-    background-position:top .7rem left 2rem;
-    margin-top: 3rem;
-  }
-  .four p{
-    padding-top: 6rem;
-    padding-left: 1rem;
-    font-size: 1.2rem;
-  }
-.five{
-    width: 8rem;
-    height: 8rem;
-    background-size: 4rem;
-    background-position: top .7rem left 2rem;
-}
 
-.five p{
-  font-size: 1.2rem;
-  padding-top: 6rem;
-}
-.six{
-    width: 8rem;
-    height: 8rem;
-    background-position: top 1rem left 2rem;
-    background-size: 4rem;
-}
-.six p{
-    padding-top: 6rem;
-    font-size: 1rem;
-    /* padding-left: .2rem; */
-  } 
-}
 
 /* inear info  */
  .modal-content {
@@ -687,7 +688,7 @@ input[type="password"]{
 .modalContent {
   width: 100vw;
   height: 100vh;
- background-color: rgba(218, 218, 218, 0.923);
+ /* background-color: rgba(218, 218, 218, 0.923); */
 
 }
 .myModal {
@@ -700,7 +701,6 @@ z-index: 1;
 width: 100vw;
 height: 100vh;
 overflow: hidden;
-background: rgb(32,0,5);
 background: linear-gradient(177deg, rgba(32,0,5,1) 3%, rgba(34,0,5,1) 8%, rgba(36,0,5,1) 11%, rgba(39,0,6,1) 16%, rgba(41,0,6,1) 20%, rgba(38,0,6,1) 26%, rgba(44,0,7,1) 37%, rgba(87,1,14,1) 100%);
 
 }
@@ -752,4 +752,37 @@ h2{
   background: linear-gradient(97deg, rgba(32,0,5,1) 99%, rgba(87,1,14,1) 100%);  
   font-size: 2rem;
   font-weight: 800;
+}
+
+/* account popup */
+
+.modalthree{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+ overflow: hidden;
+background: rgb(32,0,5);
+
+}
+.accounthead{
+  border-bottom: 1px solid white;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 5rem;
+  place-items: center;
+}
+#closethree {
+  justify-self: baseline;
+  padding-left: 2rem;
+}
+@media (max-width:46.7rem){
+  .accounthead{
+    font-size: 2rem;
+  }  
 }
