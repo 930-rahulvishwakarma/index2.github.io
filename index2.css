@@ -254,6 +254,7 @@ span i {
  /* padding-bottom: 2rem; */
 }
 .one{
+  border-radius: .5rem;
   align-self: center;
     width: 10rem;
     height: 10rem;
@@ -262,7 +263,7 @@ span i {
     background-repeat: no-repeat;
     background-position: top 1rem left 3rem;
     background-size: 4rem;
-  box-shadow: 0px 0px 4px orangered;
+  box-shadow: 0px 0px 1px orangered;
   }
 .one p{
   color: rgb(224, 147, 5);
@@ -271,6 +272,7 @@ span i {
     padding-right: .5rem;
 }
 .two{
+  border-radius: .5rem;
   width: 10rem;
   height: 10rem;
   border: 1px solid orange;
@@ -278,7 +280,7 @@ span i {
   background-repeat: no-repeat;
   background-position: top 1rem left 3rem;
   background-size: 4rem;
-box-shadow: 0px 0px 4px orangered;
+/* box-shadow: 0px 0px 1px orangered; */
 }
 .two p{
 color: rgb(224, 147, 5);
@@ -286,6 +288,7 @@ text-align: center;
   padding-top: 6rem;
   padding-right: .5rem;
 }.three{
+  border-radius: .5rem;
   width: 10rem;
   height: 10rem;
   border: 1px solid orange;
@@ -293,7 +296,7 @@ text-align: center;
   background-repeat: no-repeat;
   background-position: top 1rem left 3rem;
   background-size: 4rem;
-box-shadow: 0px 0px 4px orangered;
+/* box-shadow: 0px 0px 4px orangered; */
 }
 .three p{
 color: rgb(224, 147, 5);
@@ -301,6 +304,7 @@ text-align: center;
   padding-top: 6rem;
   padding-right: .5rem;
 }.four{
+  border-radius: .5rem;
   width: 10rem;
   height: 10rem;
   border: 1px solid lightseagreen;
@@ -308,7 +312,7 @@ text-align: center;
   background-repeat: no-repeat;
   background-position: top 1rem left 3rem;
   background-size: 4rem;
-box-shadow: 0px 0px 4px skyblue;
+/* box-shadow: 0px 0px 4px skyblue; */
 }
 .four p{
   color: lightseagreen;
@@ -316,22 +320,24 @@ text-align: center;
   padding-top: 6rem;
   padding-right: .5rem;
 }
-.five{
-  border: 1px solid lightseagreen;
+  .five{
+    border-radius: .5rem;
+    border: 1px solid lightseagreen;
   width: 10rem;
   height: 10rem;
   background-image: url(settings.png);
   background-repeat: no-repeat;
   background-position: top 1rem left 3rem;
   background-size: 4rem;
-box-shadow: 0px 0px 4px skyblue;
+/* box-shadow: 0px 0px 4px skyblue; */
 }
 .five p{
-  color: lightseagreen;
+  color: lightskyblue;
   text-align: center;
   padding-top: 6rem;
   padding-right: .5rem;
 }.six{
+  border-radius: .5rem;
   width: 10rem;
   height: 10rem;
   border: 1px solid lightseagreen;
@@ -339,10 +345,10 @@ box-shadow: 0px 0px 4px skyblue;
   background-repeat: no-repeat;
   background-position: top 1rem left 3rem;
   background-size: 4rem;
-box-shadow: 0px 0px 4px skyblue;
+/* box-shadow: 0px 0px 4px skyblue; */
 }
 .six p{
-  color: lightseagreen;
+  color: lightskyblue;
 text-align: center;
   padding-top: 6rem;
   padding-right: .5rem;
@@ -785,4 +791,108 @@ background: rgb(32,0,5);
   .accounthead{
     font-size: 2rem;
   }  
+}
+
+
+.modalfour{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(211, 211, 211);
+  color: #ffffff;
+}
+.cs{
+  background: rgb(32,0,5);
+  width: 100vw;
+  height: 5rem;
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+}
+.cs h3{
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  justify-self: baseline;
+  cursor: pointer;
+}
+.modalfive{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(211, 211, 211);
+  color: #ffffff;
+}
+.setting{
+  background: rgb(32,0,5);
+  border: 1px solid white;
+  font-size: 2rem;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 6rem;
+  place-items: center;
+}
+#closefive{
+  cursor: pointer;
+  padding-left: 2rem;
+   justify-self: baseline;
+}
+.version{
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border: 1px solid white;
+  height: 4rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+.logout{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: red;
+}
+.modalsix{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(211, 211, 211);
+  color: #ffffff;
+}
+.download{
+  border: 1px solid black;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 5rem;
+  place-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+#closesix{
+  justify-self: baseline;
+  padding-left: 1rem;
 }
