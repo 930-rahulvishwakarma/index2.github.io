@@ -10,13 +10,14 @@
 
     <script defer src="ondex2.js"></script>
     <script defer src="trade.js"></script>
+    <script defer src="account.js"></script>
 </head>
 
 <body>
     <div class="outercantainer">
         <div id="frist">
-            <nav id="fristarrow"> <
-                </nav>
+            <nav id="fristarrow">
+                < </nav>
                     <nav id="mypage">my page</nav>
                     <nav id="priv">privelges</nav>
         </div>
@@ -51,6 +52,7 @@
                 WITHDRAWAL
             </span>
         </div>
+        <!-- footer -->
         <div class="footer">
             <div class="one" id="myBtn">
                 <p>INFO</p>
@@ -58,17 +60,17 @@
             <div class="two" id="mybtn">
                 <p>TRADELIST</p>
             </div>
-            <div class=" three">
+            <div class=" three" id="mybtn3">
                 <p>ACCOUNT<br>MANAGEMENT</p>
             </div>
-            <div class="four">
+            <div class="four" id="mybtn4">
                 <p>CS</p>
             </div>
-            <div class="five">
+            <div class="five" id="mybtn5">
                 <p>SETTING</p>
             </div>
-            <div class="six">
-                <p>APPDOWNLOAD</p>
+            <div class="six" id="mybtn6">
+                <p>DOWNLOAD</p>
             </div>
             <div class="seven">GOOLOBAL<br>FOOTBALL</div>
         </div>
@@ -109,23 +111,95 @@
             </div>
         </div>
 
-    </div>
-    <!-- tradeinear-->
-    <div id="Modaltrade" class="myModal">
-        <div class="modelContent">
-            <div class="tradeinear">
-                <h2 id="closetwo">
-                    < </h2>
-                        <p id="tradetwo">Trade List</p>
-                        <p id="tradethree">Instructions</p>
+
+        <!-- tradeinear-->
+        <div id="Modaltrade" class="myModal">
+            <div class="modelContent">
+                <div class="tradeinear">
+                    <h2 id="closetwo">
+                        < </h2>
+                            <p id="tradetwo">Trade List</p>
+                            <p id="tradethree">Instructions</p>
+                </div>
+                <div class="tradeinear2">
+                    <p>deposit</p>
+                    <p>Withdrawal</p>
+                </div>
             </div>
-            <div class="tradeinear2">
-               <p>deposit</p>
-               <p>Withdrawal</p>
+        </div>
+        <!-- Account management -->
+        <div class="modalthree" id="modalthree">
+            <div class="accounthead">
+                <p id="closethree">
+                    < </p>
+                        <p id="card">Add Card</p>
+            </div>
+        </div>
+        <!-- customer services -->
+        <div id="modalfour" class="modalfour">
+            <div class="cs">
+                <h3 id="closefour"> < </h3>
+                        <p>CS</p>
+            </div>
+        </div>
+        <div id="modalfive" class="modalfive">
+            <div class="setting">
+                <h3 id="closefive"><</h3>
+                <p>SETTING</p>
+            </div>
+            <div class="version">
+                <span>version</span>
+                <span>v1.0.0</span>
+            </div>
+            <div class="logout">
+                <span>Logout</span>
+            </div>
+        </div>
+        <div id="modalsix" class="modalsix">
+            <div class="download">
+                <h3 id="closesix"> < </h3>
+                        <p>Download</p>
             </div>
         </div>
     </div>
+    
+    <script>
+        var modalfour = document.getElementById("modalfour");
+        var btnfour = document.getElementById("mybtn4");
+        var closefour = document.getElementById("closefour");
 
+        btnfour.onclick = function () {
+            modalfour.style.display = "block";
+        }
+        closefour.onclick = function () {
+            modalfour.style.display = "none";
+        }
+        // modal five popup
+        var modalfive = document.getElementById("modalfive");
+        var btnfive = document.getElementById("mybtn5");
+        var closefive = document.getElementById("closefive");
+
+        btnfive.onclick = function () {
+            modalfive.style.display = "block";
+        }
+        closefive.onclick = function () {
+            modalfive.style.display = "none";
+        }
+
+       //////////////////////////////////
+        //   modal six  //
+
+        var modalsix = document.getElementById("modalsix");
+        var btnsix = document.getElementById("mybtn6");
+        var closesix = document.getElementById("closesix");
+
+        btnsix.onclick = function () {
+            modalsix.style.display = "block";
+        }
+        closesix.onclick = function () {
+            modalsix.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
