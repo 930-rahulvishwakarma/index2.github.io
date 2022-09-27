@@ -70,9 +70,9 @@
                 <p>SETTING</p>
             </div>
             <div class="six" id="mybtn6">
-                <p>APPDOWNLOAD</p>
+                <p>DOWNLOAD</p>
             </div>
-            <div class="seven">GOOLOBAL<br>FOOTBALL</div>
+            <div class="seven" id="mybtn7">GOOLOBAL<br>FOOTBALL</div>
         </div>
         <!-- <button id="myBtn">click me</button> -->
         <div id="myModal" class="modal">
@@ -161,6 +161,13 @@
                         <p>Download</p>
             </div>
         </div>
+        <!-- seven modal -->
+        <div id="modalseven" class="modalsix">
+            <div class="events">
+                <h3 id="closeseven"> < </h3>
+                        <p>events</p>
+            </div>
+        </div>
     </div>
     
     <script>
@@ -198,6 +205,18 @@
         }
         closesix.onclick = function () {
             modalsix.style.display = "none";
+        }
+        ///////////////////////////////
+        // modal seven //
+        var modalseven = document.getElementById("modalseven");
+        var btnseven = document.getElementById("mybtn7");
+        var closeseven = document.getElementById("closeseven");
+
+        btnseven.onclick = function () {
+            modalseven.style.display = "block";
+        }
+        closeseven.onclick = function () {
+            modalseven.style.display = "none";
         }
     </script>
 </body>
